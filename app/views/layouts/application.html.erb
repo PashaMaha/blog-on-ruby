@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlogМilan</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Фон</title>
+    <style>
+      body {
+        background: url(https://www.logo.wine/a/logo/A.C._Milan/A.C._Milan-Logo.wine.svg)no-repeat;
+        moz-background-size: 100%;
+        webkit-background-size: 100%;
+        background-size: 100%;
+        <body style="background-attachment:fixed" topmargin="0"
+      }
+    </style>
+  </head>
+  <body>
+  <p></p>
+  </body>
+  </html>
+
+  <body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black red-bottom black-sm">
+    <h5 class="my-0 mr-md-auto font-weight-absolute">AC.Milan</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <span class="btn btn-success" ><%= link_to "Home" ,home_path %></span>
+    <span class="btn btn-light"><%= link_to "News" ,about_path %></span>
+    <span class="btn btn-danger"><%= link_to 'Add post', new_post_path %></span>
+  </div>
+  <div class='container'>
+    <%= yield %>
+  </div>
+  </body>
+</html>
